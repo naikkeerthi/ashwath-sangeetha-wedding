@@ -1,0 +1,185 @@
+.couple-section {
+  color: white;
+
+  .section-title {
+    font-size: 2rem;
+    font-family: Sacramento, cursive;
+    font-weight: 100;
+    margin-bottom: 20px;
+  }
+  .invitation-message {
+    .invitation-heading {
+      font-family: "Noto Naskh Arabic", serif;
+      font-size: 2rem;
+      font-weight: 100;
+    }
+  }
+
+  .deity-name {
+    .deity-heading {
+      font-family: "Noto Naskh Arabic", serif;
+      font-size: 2rem;
+      font-weight: 100;
+    }
+  }
+  .invitation-details {
+    padding-bottom: 3rem;
+    .invitation-text {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 100;
+    }
+  }
+  .couple-photo-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+
+    .groom-photo-container {
+      visibility: hidden;
+      opacity: 0;
+
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .bride-photo-container {
+      visibility: hidden;
+      opacity: 0;
+      img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .smooth-fade-in-right {
+      visibility: visible;
+      opacity: 1;
+      animation: fadeInDownSmoothRight 0.9s ease-in;
+    }
+
+    @keyframes fadeInDownSmoothRight {
+      0% {
+        opacity: 0;
+        transform: translateX(130px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .smooth-fade-in-left {
+      visibility: visible;
+      opacity: 1;
+      animation: fadeInDownSmooth 0.9s ease-in;
+    }
+
+    @keyframes fadeInDownSmooth {
+      0% {
+        opacity: 0;
+        transform: translateX(-130px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .and-symbol-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Sacramento", cursive;
+      font-size: 2rem;
+      margin: 0px;
+    }
+    .groom-name,
+    .bride-name {
+      font-size: 3rem;
+      font-family: "Sacramento", cursive;
+      font-weight: 100;
+      margin: 14px;
+    }
+    .bride-role,
+    .groom-role {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 100;
+      margin: auto;
+    }
+  }
+
+  .first-heart-icon {
+    position: relative;
+    left: 4%;
+    bottom: 20px;
+    opacity: 0.6;
+  }
+  .second-heart-icon {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    right: 6%;
+    opacity: 0.6;
+    top: 20px;
+  }
+  .animate-love {
+    animation: love 5s ease-in-out infinite;
+  }
+  @keyframes love {
+    50% {
+      transform: translateY(1rem);
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .couple-section {
+    .deity-name {
+      .deity-heading {
+        font-size: 1.5rem;
+      }
+    }
+    .invitation-message {
+      .invitation-heading {
+        padding: 0px 8px;
+        font-size: 20px;
+      }
+    }
+    .invitation-details {
+      .invitation-text {
+        padding: 0px 8px;
+        letter-spacing: 1px;
+        font-size: 1rem;
+      }
+    }
+    .couple-photo-wrapper {
+      display: block;
+      .groom-name,
+      .bride-name {
+        font-size: 2rem;
+      }
+      .groom-photo-container {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .bride-photo-container {
+        img {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .and-symbol-container {
+        h1 {
+          font-size: 32px;
+        }
+      }
+    }
+  }
+}

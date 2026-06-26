@@ -1,0 +1,71 @@
+.venue-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  .venue-heading {
+    font-family: "Sacramento", cursive;
+    font-weight: lighter;
+    font-size: 3rem;
+    margin: 0px;
+  }
+  .gratitude-message {
+    font-size: 0.9rem;
+    font-family: "Josefin Sans", sans-serif;
+  }
+  .map-container {
+    width: 100%;
+    max-width: 70%;
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 16px;
+    color: #fff;
+    border: 1px solid #495057;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+    p {
+      font-size: 0.9rem;
+      font-family: "Josefin Sans", sans-serif;
+    }
+    .location-icon {
+      color: red;
+    }
+    .map-venue {
+      width: 100%;
+
+      .map-frame {
+        border: none;
+        height: 60vh;
+        width: 100%;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .venue-section-container {
+    .venue-heading {
+      font-family: "Sacramento", cursive;
+      font-size: 2rem;
+      &.kannada-heading {
+        font-size: 1.5rem;
+      }
+    }
+
+    .map-container {
+      max-width: 92%;
+      .map-venue {
+        width: 100%;
+        .map-frame {
+          height: 48vh;
+        }
+      }
+    }
+    .gratitude-message {
+      padding: 8px 14px;
+    }
+  }
+}

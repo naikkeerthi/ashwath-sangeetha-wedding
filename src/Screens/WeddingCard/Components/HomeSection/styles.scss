@@ -1,0 +1,165 @@
+.home-section-container {
+  .title-wrapper {
+    .wedding-title {
+      font-size: 2.5rem;
+      font-weight: 100;
+      margin-bottom: 20px;
+      color: white;
+      font-family: "Sacramento", cursive;
+    }
+  }
+  .invite-message {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 22px;
+    letter-spacing: 1px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .bride-groom-image-wrapper {
+    .bride-groom-image {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+    }
+  }
+  .bride-groom-names-wrapper {
+    .heart-icon {
+      font-size: 1.5rem;
+      color: red;
+    }
+    .bride-groom-names {
+      font-size: 2.5rem;
+      font-weight: 100;
+      margin-bottom: 20px;
+      color: white;
+      font-family: "Sacramento", cursive;
+    }
+
+    .wedding-date {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 20px;
+      font-family: "Josefin Sans", sans-serif !important;
+    }
+  }
+
+  .scroll-button-wrapper {
+    .scroll-button {
+      background-color: #212529;
+      color: white;
+      border: 1px solid white;
+      padding: 8px 12px;
+      font-size: 14px;
+      font-weight: 100;
+      margin-bottom: 14px;
+      &:hover {
+        background-color: #fff;
+        color: black;
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+
+  .scroll-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .mouse-icon {
+      width: 24px;
+      height: 40px;
+      border: 2px solid #fff;
+      border-radius: 50px;
+      position: relative;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .scroll-wheel {
+        width: 4px;
+        height: 8px;
+        background-color: #fff;
+        border-radius: 4px;
+        position: absolute;
+        top: 8px;
+        transform: translateX(-50%);
+        animation: scroll-wheel 1.5s infinite ease-in-out;
+      }
+
+      @keyframes scroll-wheel {
+        0% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+      }
+    }
+
+    .scroll-text {
+      color: #fff;
+      background: none;
+      border: none;
+      font-size: 16px;
+      font-weight: 100;
+      cursor: pointer;
+      font-family: "Josefin Sans", sans-serif;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .home-section-container {
+    .title-wrapper {
+      .wedding-title {
+        font-size: 2.5rem;
+      }
+    }
+    .bride-groom-wrapper {
+      .couple-photo-wrapper {
+        display: block;
+      }
+      .deity-name {
+        .deity-heading {
+          font-size: 1.5rem;
+        }
+      }
+      .invitation-message {
+        .invitation-heading {
+          padding: 0px 8px;
+          font-size: 20px;
+        }
+      }
+      .invitation-details {
+        .invitation-text {
+          padding: 0px 8px;
+        }
+      }
+      .couple-photo-wrapper {
+        .and-symbol-container {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    .bride-groom-names-wrapper {
+      .bride-groom-names {
+        margin: 6px;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}

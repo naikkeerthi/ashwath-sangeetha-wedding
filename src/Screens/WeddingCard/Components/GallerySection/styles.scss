@@ -1,0 +1,43 @@
+.gallery-container {
+  width: 100%;
+  max-width: 70%;
+  margin: auto;
+  background-color: #1b1b1b;
+  padding: 20px;
+  border-radius: 16px;
+  color: #fff;
+  border: 1px solid #495057;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+  .gallery-header {
+    .gallery-title {
+      font-size: 2rem;
+      font-family: Sacramento, cursive;
+      font-weight: 100;
+      margin-bottom: 20px;
+    }
+  }
+  .description-content {
+    margin-bottom: 1.5rem;
+    .description-text {
+      letter-spacing: 1px;
+      font-family: "Josefin Sans", sans-serif;
+    }
+  }
+  .image-carousel {
+    .couple-images-wrapper {
+      .couple-images {
+        border-radius: 16px;
+      }
+    }
+    .slide {
+      transition: transform 1.2s ease-in-out !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    max-width: 94%;
+  }
+}

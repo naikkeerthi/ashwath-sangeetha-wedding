@@ -1,0 +1,188 @@
+.event-section-container {
+  .event-title {
+    .english-text {
+      font-size: 2rem;
+      font-family: Sacramento, cursive;
+      font-weight: 100;
+      margin-bottom: 20px;
+    }
+  }
+  .countdown-timer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    border: 1px solid #495057;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 12px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    .countdown-item {
+      margin: 0 10px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex: 1;
+
+      .countdown-value {
+        display: block;
+        font-size: 2rem;
+        font-weight: 100;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      .countdown-label {
+        font-size: 0.9rem;
+        padding-top: 6px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 100;
+      }
+    }
+  }
+  .god-grace-text {
+    p {
+      font-family: "Josefin Sans", sans-serif;
+    }
+  }
+  .wedding-event-wrapper {
+    .event-title {
+      font-family: "Sacramento", cursive;
+      font-weight: 100;
+      margin-bottom: 0px;
+    }
+    .wedding-event-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      .muhurtham-content {
+        .muhurtha-title {
+          font-family: "Sacramento", cursive;
+          font-weight: 400;
+          font-size: 2rem;
+        }
+        p {
+          font-family: "Josefin Sans", sans-serif;
+        }
+      }
+      .reception-content {
+        .reception-title {
+          font-family: "Sacramento", cursive;
+          font-weight: 400;
+          font-size: 2rem;
+        }
+        p {
+          font-family: "Josefin Sans", sans-serif;
+        }
+      }
+      .divider {
+        background-color: #495057;
+        width: 2px;
+        height: 8vh;
+      }
+    }
+
+    .location-content {
+      p {
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      .location-icon {
+        color: red;
+      }
+    }
+    .button-wrapper {
+      .custom-google-maps-button {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 25px;
+        font-size: 16px;
+        padding: 6px 18px;
+        &:focus {
+          box-shadow: none;
+        }
+        &:hover {
+          background-color: white;
+          color: black;
+          border: 1px solid white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .event-section-container {
+    .event-title {
+      .english-text {
+        &.kannada-text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .countdown-timer {
+      width: 96%;
+      justify-content: center;
+      font-size: 0.8rem;
+      padding: 8px;
+      .countdown-item {
+        flex-direction: column;
+        margin: 2px 0px;
+        .countdown-value {
+          font-size: 1rem;
+        }
+
+        .countdown-label {
+          padding-top: 0px;
+        }
+      }
+    }
+    .god-grace-text {
+      p {
+        padding: 12px;
+        font-size: 0.9rem;
+      }
+    }
+    .wedding-event-wrapper {
+      .event-title {
+        &.kannada-title {
+          font-size: 1.5rem;
+        }
+      }
+      .wedding-event-content {
+        flex-direction: column;
+        gap: 0px;
+        .muhurtha-title {
+          &.kannada-word {
+            font-size: 18px;
+          }
+        }
+        .divider {
+          display: none;
+        }
+
+        .reception-content {
+          .reception-title {
+            &.kannada-font {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .location-content {
+        p {
+          padding: 0px 12px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
