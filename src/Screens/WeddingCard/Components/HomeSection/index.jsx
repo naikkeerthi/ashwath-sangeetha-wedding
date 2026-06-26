@@ -1,7 +1,7 @@
 import "./styles.scss";
 import React from "react";
 import { Button } from "primereact/button";
-import profileImage from "../../../../Assets/images/coupleProfilePhoto.png";
+import profileImage from "../../../../Assets/images/coupleProfilePhoto.jpeg";
 
 const HomeSection = ({ translations, language, handleTabClick }) => {
   const handleScroll = () => {

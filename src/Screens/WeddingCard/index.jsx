@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 import confetti from "canvas-confetti";
 import { Button } from "primereact/button";
 import music from "../../Assets/music/RHTDM-Rain-Theme.mp3";
-import profileImage from "../../Assets/images/coupleProfileFront.png";
+import profileImage from "../../Assets/images/coupleProfileFront.jpeg";
 import HomeSection from "./Components/HomeSection";
 import CouplesSection from "./Components/CouplesSection";
 import EventSection from "./Components/EventSection";
