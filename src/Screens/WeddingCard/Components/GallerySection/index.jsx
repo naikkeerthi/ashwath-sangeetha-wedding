@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import { Image } from "primereact/image";
 import Image1 from "../../../../Assets/images/galleryImage1.jpeg";
-import Image2 from "../../../../Assets/images/galleryImage2.jpeg";
+// import Image2 from "../../../../Assets/images/galleryImage2.jpeg";
 // import Image3 from "../../../../Assets/images/galleryImage3.jpeg";
 // import Image4 from "../../../../Assets/images/gallery-image4.jpg";
 // import Image5 from "../../../../Assets/images/gallery-image5.jpg";
