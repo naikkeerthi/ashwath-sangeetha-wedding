@@ -1,7 +1,9 @@
 import "./styles.scss";
 import React from "react";
-import brideImage from "../../../../Assets/images/bride-profile.png";
-import groomImage from "../../../../Assets/images/groom-profile.png";
+// import brideImage from "../../../../Assets/images/bride-profile.png";
+// import groomImage from "../../../../Assets/images/groom-profile.png";
+import brideImage from "../../../../Assets/images/bride-img.jpg";
+import groomImage from "../../../../Assets/images/groom-img.jpg";
 
 const CouplesSection = ({ language, translations, animateBrideGroom }) => {
   return (

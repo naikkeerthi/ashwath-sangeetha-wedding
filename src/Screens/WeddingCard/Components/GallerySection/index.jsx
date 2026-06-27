@@ -5,7 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import { Image } from "primereact/image";
 import Image1 from "../../../../Assets/images/galleryImage1.jpeg";
 import Image2 from "../../../../Assets/images/galleryImage2.jpeg";
-import Image3 from "../../../../Assets/images/galleryImage3.jpeg";
+// import Image3 from "../../../../Assets/images/galleryImage3.jpeg";
 // import Image4 from "../../../../Assets/images/gallery-image4.jpg";
 // import Image5 from "../../../../Assets/images/gallery-image5.jpg";
 // import Image6 from "../../../../Assets/images/gallery-image6.jpg";
@@ -16,6 +16,17 @@ import Image3 from "../../../../Assets/images/galleryImage3.jpeg";
 // import Image11 from "../../../../Assets/images/gallery-image11.jpg";
 // import Image12 from "../../../../Assets/images/gallery-image12.jpg";
 
+// import Image1 from "../../../../Assets/images/gallery-img1.jpeg";
+import img1 from "../../../../Assets/images/gallery-img1.jpg";
+import img2 from "../../../../Assets/images/gallery-img2.jpg";
+import img3 from "../../../../Assets/images/gallery-img3.jpg";
+import img4 from "../../../../Assets/images/gallery-img4.jpg";
+import img5 from "../../../../Assets/images/gallery-img5.jpg";
+import img6 from "../../../../Assets/images/gallery-img6.jpg";
+import img7 from "../../../../Assets/images/gallery-img7.jpg";
+import img8 from "../../../../Assets/images/gallery-img8.jpg";
+import img9 from "../../../../Assets/images/gallery-img9.jpg";
+
 const GallerySection = ({ translations, language }) => {
   const images = [
     {
@@ -24,61 +35,61 @@ const GallerySection = ({ translations, language }) => {
       alt: "Image 1",
     },
 
+    // {
+    //   id: 2,
+    //   src: Image2,
+    //   alt: "Image 2",
+    // },
+    // {
+    //   id: 3,
+    //   src: Image3,
+    //   alt: "Image 3",
+    // },
     {
-      id: 2,
-      src: Image2,
-      alt: "Image 2",
+      id: 4,
+      src: img1,
+      alt: "Image 4",
     },
     {
-      id: 3,
-      src: Image3,
-      alt: "Image 3",
+      id: 5,
+      src: img2,
+      alt: "Image 5",
     },
-    // {
-    //   id: 4,
-    //   src: Image4,
-    //   alt: "Image 4",
-    // },
-    // {
-    //   id: 5,
-    //   src: Image5,
-    //   alt: "Image 5",
-    // },
-    // {
-    //   id: 6,
-    //   src: Image6,
-    //   alt: "Image 6",
-    // },
-    // {
-    //   id: 7,
-    //   src: Image7,
-    //   alt: "Image 7",
-    // },
-    // {
-    //   id: 8,
-    //   src: Image8,
-    //   alt: "Image 8",
-    // },
-    // {
-    //   id: 9,
-    //   src: Image9,
-    //   alt: "Image 9",
-    // },
-    // {
-    //   id: 10,
-    //   src: Image10,
-    //   alt: "Image 10",
-    // },
-    // {
-    //   id: 11,
-    //   src: Image11,
-    //   alt: "Image 11",
-    // },
-    // {
-    //   id: 12,
-    //   src: Image12,
-    //   alt: "Image 12",
-    // },
+    {
+      id: 6,
+      src: img3,
+      alt: "Image 6",
+    },
+    {
+      id: 7,
+      src: img4,
+      alt: "Image 7",
+    },
+    {
+      id: 8,
+      src: img5,
+      alt: "Image 8",
+    },
+    {
+      id: 9,
+      src: img6,
+      alt: "Image 9",
+    },
+    {
+      id: 10,
+      src: img7,
+      alt: "Image 10",
+    },
+    {
+      id: 11,
+      src: img8,
+      alt: "Image 11",
+    },
+    {
+      id: 12,
+      src: img9,
+      alt: "Image 12",
+    },
   ];
 
   return (
